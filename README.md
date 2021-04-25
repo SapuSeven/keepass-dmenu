@@ -1,5 +1,7 @@
 # keepass-dmenu
 
+A dmenu-compatible interface for KeePass databases on Linux.
+
 ## Installation
 
 ```
