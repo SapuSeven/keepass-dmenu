@@ -10,13 +10,13 @@ python -m pip install .
 
 ## Configuration
 
-The script is looking for a configuration file under `$XDG_CONFIG_HOME/keepass-dmenu.config`, falling back to `$HOME/.config/keepass-dmenu.config` if `XDG_CONFIG_HOME` is not set.
+The script is looking for a configuration file under `$XDG_CONFIG_HOME/keepass-dmenu.conf`, falling back to `$HOME/.config/keepass-dmenu.conf` if `XDG_CONFIG_HOME` is not set.
 
 The file follows the INI file format.
 
 ### Example
 
- [`keepass-dmenu.config.example`](https://github.com/SapuSeven/keepass-dmenu/blob/master/keepass-dmenu.config.example) contains a template for the configuration file.
+ [`keepass-dmenu.conf.example`](https://github.com/SapuSeven/keepass-dmenu/blob/master/keepass-dmenu.conf.example) contains a template for the configuration file.
 
 ```
 [config]
