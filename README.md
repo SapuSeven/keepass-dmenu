@@ -4,6 +4,8 @@ A dmenu-compatible interface for KeePass databases on Linux.
 
 ## Installation
 
+You can edit the dmenu command (default: `rofi -dmenu`) by changing the `dmenu` variable in `keepass-dmenu` before installation.
+
 ```
 git clone https://github.com/SapuSeven/keepass-dmenu.git
 cd keepass-dmenu
@@ -32,6 +34,10 @@ _Note: If you don't want to store the plaintext password, you currently need to 
 ## Usage
 
 _Note: You need to add the [Python site-package script directory](https://www.python.org/dev/peps/pep-0370/#specification) (default: `~/.local/bin`) to your PATH variable._
+
+Simply execute `keepass-dmenu` to show the dmenu dialog.
+
+## Usage (KeePass interface)
 
 `list`: Simply returns all entries line-by-line with their full path.
 
