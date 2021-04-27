@@ -20,11 +20,11 @@ autotype() {
 
 entries=$(keepass-dmenu.py list)
 if [[ $? != 0 ]]; then
-  (echo Exit; echo "$entries") | $dmenu -p "Error" > /dev/null
+  (echo Exit; echo -n "$entries") | $dmenu -p "Error" > /dev/null
   exit 1
 fi
 
-selection=$(echo "$entries" | $dmenu -i -p "Search")
+selection=$(echo -n "$entries" | $dmenu -i -p "Search")
 
 if [[ ${selection} == "" ]]; then
   exit 1
@@ -34,7 +34,7 @@ options=$(cat << END
 Copy Username
 Copy Password
 Copy OTP Code
-$(echo -e "$(keepass-dmenu.py info "$selection" custom)" | while read line; do echo "Copy ${line}"; done)
+$(echo -n -e "$(keepass-dmenu.py info "$selection" custom)" | while read line; do echo "Copy ${line}"; done)
 Perform Auto-Type
 END
 )
